@@ -22,6 +22,7 @@
 		3ED599B82C14D8C40081C17A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599B72C14D8C40081C17A /* CustomTextField.swift */; };
 		3ED599BB2C14DAC50081C17A /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599BA2C14DAC50081C17A /* RoundedCorner.swift */; };
 		3ED599BE2C14DFB90081C17A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599BD2C14DFB90081C17A /* ColorExtension.swift */; };
+		3ED599C02C14FF270081C17A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599BF2C14FF270081C17A /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3ED599B72C14D8C40081C17A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3ED599BA2C14DAC50081C17A /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		3ED599BD2C14DFB90081C17A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		3ED599BF2C14FF270081C17A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				3ED599922C14AB300081C17A /* OnboardingView.swift */,
 				3ED599B52C14D2320081C17A /* SignInView.swift */,
+				3ED599BF2C14FF270081C17A /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED599932C14AB300081C17A /* OnboardingView.swift in Sources */,
+				3ED599C02C14FF270081C17A /* TabBarView.swift in Sources */,
 				3ED599B62C14D2320081C17A /* SignInView.swift in Sources */,
 				3ED5999E2C14B8010081C17A /* Fonts.swift in Sources */,
 				3ED599BB2C14DAC50081C17A /* RoundedCorner.swift in Sources */,

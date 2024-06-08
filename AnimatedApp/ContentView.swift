@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+   @AppStorage("selectedTab") var selectedTab: TabType = .chat
+   
    var body: some View {
-      OnboardingView()
+      //OnboardingView()
+      ZStack{
+         switch selectedTab {
+         case .chat:
+            Text("Chat")
+         case .search:
+            Text("Search")
+         case .timer:
+            Text("Timer")
+         case .bell:
+            Text("Bell")
+         case .user:
+            Text("user")
+         }
+         
+         TabBarView()
+      }
    }
 }
 
