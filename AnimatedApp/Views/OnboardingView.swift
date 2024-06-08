@@ -24,7 +24,7 @@ struct OnboardingView: View {
          Color.shadow.opacity(showModal ? 0.4: 0).ignoresSafeArea()
          
          if showModal {
-            SignInView()
+            SignInView(showModal: $showModal)
                .transition(.move(edge: .top).combined(with: .opacity))
                .overlay{
                   Button{
