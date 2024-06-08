@@ -15,13 +15,15 @@ struct OnboardingView: View {
    var body: some View {
       ZStack{
          ShapesAnimatedBG()
-         VStack{
-            Text("Keep Your Money on Track")
-               .customFont(.Poppins,55,.largeTitle)
-               .frame(width: 260, alignment: .leading)
-            
-            Text("Don't loose any trasaction and reach your saving goals on a snatch").customFont()
+         VStack(alignment: .leading, spacing: 16){
+            Text("Keep Your Money on Track with ease")
+               .customFont(.largeTitle)
+               
+
+            Spacer()
+            Text("Don't loose any trasaction and reach your saving goals on a snatch").customFont(.body)
               
+            
             button.view()
                .frame(width: 236, height: 64)
                .overlay{
@@ -38,6 +40,7 @@ struct OnboardingView: View {
                   button.play(animationName: "active")
                }
          }
+            .padding(40)
       }
       
    }
