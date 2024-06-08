@@ -15,7 +15,9 @@
 		3ED599932C14AB300081C17A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599922C14AB300081C17A /* OnboardingView.swift */; };
 		3ED599952C14ADBC0081C17A /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED599942C14ADBC0081C17A /* RiveAssets */; };
 		3ED599982C14B6440081C17A /* ShapesAnimatedBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599972C14B6440081C17A /* ShapesAnimatedBG.swift */; };
-		3ED5999A2C14B7100081C17A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3ED599992C14B7100081C17A /* Fonts */; };
+		3ED5999E2C14B8010081C17A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5999D2C14B8010081C17A /* Fonts.swift */; };
+		3ED599B02C14BF980081C17A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3ED599AF2C14BF980081C17A /* Fonts */; };
+		3ED599B32C14C8990081C17A /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599B22C14C8990081C17A /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +29,10 @@
 		3ED599922C14AB300081C17A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3ED599942C14ADBC0081C17A /* RiveAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RiveAssets; path = "../../../../../Downloads/SwiftUI Animations/RiveAssets"; sourceTree = "<group>"; };
 		3ED599972C14B6440081C17A /* ShapesAnimatedBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAnimatedBG.swift; sourceTree = "<group>"; };
-		3ED599992C14B7100081C17A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		3ED5999B2C14B72D0081C17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3ED5999D2C14B8010081C17A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3ED599AF2C14BF980081C17A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		3ED599B22C14C8990081C17A /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,10 @@
 		3ED5997E2C14A99A0081C17A /* AnimatedApp */ = {
 			isa = PBXGroup;
 			children = (
+				3ED599B12C14C8870081C17A /* Modifiers */,
+				3ED599AF2C14BF980081C17A /* Fonts */,
+				3ED5999C2C14B7EF0081C17A /* Utils */,
 				3ED5999B2C14B72D0081C17A /* Info.plist */,
-				3ED599992C14B7100081C17A /* Fonts */,
 				3ED599962C14B62D0081C17A /* Components */,
 				3ED599942C14ADBC0081C17A /* RiveAssets */,
 				3ED5997F2C14A99A0081C17A /* AnimatedAppApp.swift */,
@@ -89,6 +95,22 @@
 				3ED599972C14B6440081C17A /* ShapesAnimatedBG.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		3ED5999C2C14B7EF0081C17A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5999D2C14B8010081C17A /* Fonts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3ED599B12C14C8870081C17A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED599B22C14C8990081C17A /* CustomFont.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +180,7 @@
 				3ED599872C14A99B0081C17A /* Preview Assets.xcassets in Resources */,
 				3ED599842C14A99B0081C17A /* Assets.xcassets in Resources */,
 				3ED599952C14ADBC0081C17A /* RiveAssets in Resources */,
-				3ED5999A2C14B7100081C17A /* Fonts in Resources */,
+				3ED599B02C14BF980081C17A /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED599932C14AB300081C17A /* OnboardingView.swift in Sources */,
+				3ED5999E2C14B8010081C17A /* Fonts.swift in Sources */,
 				3ED599982C14B6440081C17A /* ShapesAnimatedBG.swift in Sources */,
+				3ED599B32C14C8990081C17A /* CustomFont.swift in Sources */,
 				3ED599822C14A99A0081C17A /* ContentView.swift in Sources */,
 				3ED599802C14A99A0081C17A /* AnimatedAppApp.swift in Sources */,
 			);

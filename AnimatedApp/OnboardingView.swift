@@ -15,21 +15,29 @@ struct OnboardingView: View {
    var body: some View {
       ZStack{
          ShapesAnimatedBG()
-         button.view()
-            .frame(width: 236, height: 64)
-            .overlay{
-            Label("Start the process", systemImage: "arrow.forward")
-               .offset(x:4,y:4)
-            }.background(
-               Color.black
-                  .cornerRadius(30)
-                  .blur(radius: 10)
-                  .opacity(0.3)
-                  .offset(y:10)
-            )
-            .onTapGesture {
+         VStack{
+            Text("Keep Your Money on Track")
+               .customFont(.Poppins,55,.largeTitle)
+               .frame(width: 260, alignment: .leading)
+            
+            Text("Don't loose any trasaction and reach your saving goals on a snatch").customFont()
+              
+            button.view()
+               .frame(width: 236, height: 64)
+               .overlay{
+                  Label("Start the process", systemImage: "arrow.forward")
+                     .offset(x:4,y:4)
+               }.background(
+                  Color.black
+                     .cornerRadius(30)
+                     .blur(radius: 10)
+                     .opacity(0.3)
+                     .offset(y:10)
+               )
+               .onTapGesture {
                   button.play(animationName: "active")
-            }
+               }
+         }
       }
       
    }
