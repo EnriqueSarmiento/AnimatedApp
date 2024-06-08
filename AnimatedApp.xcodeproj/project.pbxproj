@@ -18,6 +18,10 @@
 		3ED5999E2C14B8010081C17A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5999D2C14B8010081C17A /* Fonts.swift */; };
 		3ED599B02C14BF980081C17A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3ED599AF2C14BF980081C17A /* Fonts */; };
 		3ED599B32C14C8990081C17A /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599B22C14C8990081C17A /* CustomFont.swift */; };
+		3ED599B62C14D2320081C17A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599B52C14D2320081C17A /* SignInView.swift */; };
+		3ED599B82C14D8C40081C17A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599B72C14D8C40081C17A /* CustomTextField.swift */; };
+		3ED599BB2C14DAC50081C17A /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599BA2C14DAC50081C17A /* RoundedCorner.swift */; };
+		3ED599BE2C14DFB90081C17A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599BD2C14DFB90081C17A /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		3ED5999D2C14B8010081C17A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		3ED599AF2C14BF980081C17A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		3ED599B22C14C8990081C17A /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		3ED599B52C14D2320081C17A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3ED599B72C14D8C40081C17A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3ED599BA2C14DAC50081C17A /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		3ED599BD2C14DFB90081C17A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,8 @@
 		3ED5997E2C14A99A0081C17A /* AnimatedApp */ = {
 			isa = PBXGroup;
 			children = (
+				3ED599BC2C14DEF80081C17A /* Extensions */,
+				3ED599B42C14D21B0081C17A /* Views */,
 				3ED599B12C14C8870081C17A /* Modifiers */,
 				3ED599AF2C14BF980081C17A /* Fonts */,
 				3ED5999C2C14B7EF0081C17A /* Utils */,
@@ -76,7 +86,6 @@
 				3ED599812C14A99A0081C17A /* ContentView.swift */,
 				3ED599832C14A99B0081C17A /* Assets.xcassets */,
 				3ED599852C14A99B0081C17A /* Preview Content */,
-				3ED599922C14AB300081C17A /* OnboardingView.swift */,
 			);
 			path = AnimatedApp;
 			sourceTree = "<group>";
@@ -108,9 +117,28 @@
 		3ED599B12C14C8870081C17A /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				3ED599BA2C14DAC50081C17A /* RoundedCorner.swift */,
 				3ED599B22C14C8990081C17A /* CustomFont.swift */,
+				3ED599B72C14D8C40081C17A /* CustomTextField.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		3ED599B42C14D21B0081C17A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ED599922C14AB300081C17A /* OnboardingView.swift */,
+				3ED599B52C14D2320081C17A /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3ED599BC2C14DEF80081C17A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ED599BD2C14DFB90081C17A /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +220,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED599932C14AB300081C17A /* OnboardingView.swift in Sources */,
+				3ED599B62C14D2320081C17A /* SignInView.swift in Sources */,
 				3ED5999E2C14B8010081C17A /* Fonts.swift in Sources */,
+				3ED599BB2C14DAC50081C17A /* RoundedCorner.swift in Sources */,
 				3ED599982C14B6440081C17A /* ShapesAnimatedBG.swift in Sources */,
+				3ED599B82C14D8C40081C17A /* CustomTextField.swift in Sources */,
 				3ED599B32C14C8990081C17A /* CustomFont.swift in Sources */,
 				3ED599822C14A99A0081C17A /* ContentView.swift in Sources */,
 				3ED599802C14A99A0081C17A /* AnimatedAppApp.swift in Sources */,
+				3ED599BE2C14DFB90081C17A /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
