@@ -29,6 +29,7 @@
 		3ED599CE2C15164F0081C17A /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599CD2C15164F0081C17A /* HCard.swift */; };
 		3ED599D02C1517530081C17A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599CF2C1517530081C17A /* HomeView.swift */; };
 		3ED599D22C151A260081C17A /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599D12C151A260081C17A /* SideMenu.swift */; };
+		3ED599D42C15237A0081C17A /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED599D32C15237A0081C17A /* MenuRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		3ED599CD2C15164F0081C17A /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
 		3ED599CF2C1517530081C17A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3ED599D12C151A260081C17A /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		3ED599D32C15237A0081C17A /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				3ED599C62C1511850081C17A /* VcardView.swift */,
 				3ED599CD2C15164F0081C17A /* HCard.swift */,
 				3ED599D12C151A260081C17A /* SideMenu.swift */,
+				3ED599D32C15237A0081C17A /* MenuRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				3ED599D22C151A260081C17A /* SideMenu.swift in Sources */,
 				3ED599B82C14D8C40081C17A /* CustomTextField.swift in Sources */,
 				3ED599B32C14C8990081C17A /* CustomFont.swift in Sources */,
+				3ED599D42C15237A0081C17A /* MenuRow.swift in Sources */,
 				3ED599822C14A99A0081C17A /* ContentView.swift in Sources */,
 				3ED599C72C1511850081C17A /* VcardView.swift in Sources */,
 				3ED599802C14A99A0081C17A /* AnimatedAppApp.swift in Sources */,
