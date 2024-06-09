@@ -12,12 +12,14 @@ struct ContentView: View {
    
    @AppStorage("selectedTab") var selectedTab: TabType = .chat
    @State var isOpen: Bool = false
+   @State var show : Bool = false
+   
    let button = RiveViewModel(fileName: "RiveAssets/menu_button", stateMachineName: "State Machine", autoPlay: false)
    
    var body: some View {
       //OnboardingView()
       ZStack{
-         Color.background2.ignoresSafeArea()
+         Color.background2.ignoresSafeArea(.all)
          
          SideMenu()
             .opacity(isOpen ? 1 : 0)
@@ -59,6 +61,22 @@ struct ContentView: View {
          .scaleEffect(isOpen ? 0.9: 1)
          .ignoresSafeArea()
          
+         Image(systemName: "person")
+            .frame(width: 36, height: 36)
+            .background(.white)
+            .mask(Circle())
+            .shadow(color: .shadow.opacity(0.2), radius: 5, x: 0, y:5)
+            .onTapGesture {
+               withAnimation(.spring()) {
+                  show = true
+               }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            .padding()
+            .offset(y: 4)
+            .offset(x: isOpen ? 100 : 0)
+            
+         
          button.view()
             .frame(width: 44, height: 44)
             .mask(Circle())
@@ -76,7 +94,16 @@ struct ContentView: View {
          
          TabBarView()
             .offset(y: isOpen ? 300 : 0)
+         
       }
+      .sheet(isPresented: $show, content: {
+         
+         OnboardingView()
+            .ignoresSafeArea()
+            
+      })
+     
+      
    }
 }
 

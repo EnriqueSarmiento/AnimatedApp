@@ -29,7 +29,7 @@ struct MenuRow: View {
                 .frame(maxWidth: selectedMenu == item.menu ? .infinity : 0)
                 .frame(maxWidth: .infinity, alignment: .leading)
           )
-          .background(Color("Backgournd 2"))
+          .background(Color("Background 2"))
           .onTapGesture {
              item.icon.setInput("active", value: true)
              DispatchQueue.main.asyncAfter(deadline: .now() + 2){
